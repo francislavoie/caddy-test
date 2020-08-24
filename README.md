@@ -88,7 +88,7 @@ M1T4|http://localhost:1314/file | no redirect (does not exit in /blog)|no redire
 M1T5|http://localhost:1314/file2dir | no redirect (exist at /)|no redirect
 M1T6|http://localhost:1314/file2file | no redirect (exist at /)|no redirect
 M1T7|http://localhost:1314/blogdir | http://localhost:1314/blog/blogdir | http://localhost:1314/blog/blogdir
-M1T8|http://localhost:1314/blogfile |error 404(no /blog/blogfile/index.html) | no redirect
+M1T8|http://localhost:1314/blogfile |error 404(no /blog/blogfile/index.html) | error 404
 
 ### Method 2
 
