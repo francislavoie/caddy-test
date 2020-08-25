@@ -1,0 +1,18 @@
+{
+	admin off
+	auto_https disable_redirects
+	http_port 1314
+}
+
+http://localhost:1314 {
+	file_server
+	root www
+
+	# --- Method 3
+	@post {
+		file /blog/{path} /blog/{path}/index.html
+		not file {path} {path}/index.html
+		path_regexp post ^/([^/]+)/?$
+	}
+	redir @post /blog/{re.post.1}/
+}
