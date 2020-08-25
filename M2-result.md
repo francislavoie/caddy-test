@@ -192,13 +192,13 @@ M2Tg|http://localhost:1314/blogfile/ | redir /blog/blogfile | redir /blog/blogfi
 
 ### Combine Result
 
-Request | Test# | Browser no trailing / | Test# | Curl no trailing / | Test# | Browser \w trailing / | Test# | Curl \w trailing /
----|---|---|---|---|---|---|---|---
-http://localhost:1314/dir | M2T1 | no redir | M2T1 | no redir | M2T9 | no redir | M2T9 | no redir
-http://localhost:1314/dir2dir | M2T2 | no redir | M2T2 | no redir | M2Ta | no redir | M2Ta | no redir
-http://localhost:1314/dir2file | M2T3 | no redir | M2T3 | no redir | M2Tb | no redir | M2Tb | no redir
-http://localhost:1314/file | M2T4 | no redir | M2T4 | no redir | M2Tc | no redir | M2Tc |404
-http://localhost:1314/file2dir | M2T5 | no redir | M2T5 | no redir | M2Td | no redir | M2Td |404
-http://localhost:1314/file2file | M2T6 | no redir | M2T6 | no redir | M2Te | no redir | M2Te |404
-http://localhost:1314/blogdir | M2T7 | redirect to /blog/blogdir/ | M2T7 | redirect to /blog/blogdir/ | M2Tf | redir /blog/blogdir/ | M2Tf | redir /blog/blogdir/
-http://localhost:1314/blogfile | M2T8 | redir /blog/blogfile | M2T8 | 404 redir /blog/blogfile/ | M2Tg | redir /blog/blogfile | M2Tg | 404 redir /blog/blogfile/
+ Request | Test# | Browser no trailing / | Curl no trailing / | Test# | Browser \w trailing / | Curl \w trailing /
+---|---|---|---|---|---|---
+ http://localhost:1314/dir | M2T1 | no redir | no redir | M2T9 | no redir | no redir
+ http://localhost:1314/dir2dir | M2T2 | no redir | no redir | M2Ta | no redir | no redir
+ http://localhost:1314/dir2file | M2T3 | no redir | no redir | M2Tb | no redir | no redir
+ http://localhost:1314/file | M2T4 | no redir | no redir | M2Tc | no redir |404
+ http://localhost:1314/file2dir | M2T5 | no redir | no redir | M2Td | no redir |404
+ http://localhost:1314/file2file | M2T6 | no redir | no redir | M2Te | no redir |404
+ http://localhost:1314/blogdir | M2T7 | redirect to /blog/blogdir/ | redirect to /blog/blogdir/ | M2Tf | redir /blog/blogdir/ | redir /blog/blogdir/
+ http://localhost:1314/blogfile | M2T8 | redir /blog/blogfile | 404 redir /blog/blogfile/ | M2Tg | redir /blog/blogfile | 404 redir /blog/blogfile/
