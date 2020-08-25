@@ -1,3 +1,16 @@
+<!-- TOC -->
+
+- [Caddy](#caddy)
+  - [CaddyCommand](#caddycommand)
+- [Curl](#curl)
+  - [Result](#result)
+  - [Curl Command](#curl-command)
+  - [Curl Output](#curl-output)
+- [Browser](#browser)
+- [Combine Result](#combine-result)
+
+<!-- /TOC -->
+
 ### Caddy
 
 https://github.com/caddyserver/caddy/actions/runs/223247096
